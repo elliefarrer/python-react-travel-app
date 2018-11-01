@@ -2,12 +2,12 @@ import React from 'react';
 import axios from 'axios';
 
 // Custom components
+import CityPreview from './CityPreview';
 // import DataProvider from './DataProvider';
 // import CitiesColumns from './CitiesColumns';
 
 export default class CitiesIndex extends React.Component {
   state = {
-    cities: [],
     hasLoaded: false
   }
   // BUG: Component mounted thing runs, but once axios request is done, it doesn't
@@ -26,6 +26,7 @@ export default class CitiesIndex extends React.Component {
   }
 
   render() {
+    const cities = this.state.cities;
     console.log('Render works');
     // if(this.state.cities.length > 0) {
       console.log('The state in render is', this.state);
@@ -34,24 +35,12 @@ export default class CitiesIndex extends React.Component {
     return(
       <section>
         <h1>All Cities</h1>
-        {/* <DataProvider
-          endpoint="api/city"
-          render={data => <CitiesColumns data={data} />}
-        /> */}
-
-        {/* {this.state.cities && this.state.cities.map(city => {
-          <h2>{city.name}</h2>;
-        })} */}
-
-        {/* {this.state.cities &&
-          console.log('Here are some cities', this.state.cities)
-        } */}
-        {this.state.hasLoaded && this.state.cities &&
+        {this.state.hasLoaded && cities &&
           <div>
-            <p className="text-muted">{this.state.cities.length} cities added...so far!</p>
-            {this.state.cities.map(city => {
-              <h3>{city.name}</h3>
-            })}
+            <p className="text-muted">{cities.length} cities added...so far!</p>
+            <CityPreview
+              cities= {cities}
+            />
           </div>
         }
       </section>
