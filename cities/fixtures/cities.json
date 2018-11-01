@@ -1,0 +1,47 @@
+[
+  {
+    "model": "cities.city",
+    "pk": 1,
+    "fields": {
+      "name": "London",
+      "country": "United Kingdom",
+      "population": 8136000
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 2,
+    "fields": {
+      "name": "Edinburgh",
+      "country": "United Kingdom",
+      "population": 482005
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 3,
+    "fields": {
+      "name": "Lisbon",
+      "country": "Portugal",
+      "population": 504718
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 4,
+    "fields": {
+      "name": "Barcelona",
+      "country": "Spain",
+      "population": 1609000
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 5,
+    "fields": {
+      "name": "The Hague",
+      "country": "The Netherlands",
+      "population": 514861
+    }
+  }
+]
