@@ -1,18 +1,19 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-const CityPreview = ({ cities }) => {
-  return cities.map(city => {
-    console.log('The city in props is', city);
-    <div key={city.id}>
-      <h3>{city.name}</h3>
-      <h4>{city.country}</h4>
-    </div>;
-  });
+const CityPreview = ( city ) => {
+  console.log('This city is', city.city.name);
+  return (
+    <div key={city.city.id} className="col-6">
+      <img className="img-thumbnail" src={city.city.img} />
+      <h3>{city.city.name}</h3>
+      <h4>{city.city.country}</h4>
+    </div>
+  );
 };
 
 CityPreview.propTypes = {
-  cities: propTypes.array.isRequired
+  city: propTypes.object.isRequired
 };
 
 export default CityPreview;

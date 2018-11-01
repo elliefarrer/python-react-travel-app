@@ -38,9 +38,13 @@ export default class CitiesIndex extends React.Component {
         {this.state.hasLoaded && cities &&
           <div>
             <p className="text-muted">{cities.length} cities added...so far!</p>
-            <CityPreview
-              cities= {cities}
-            />
+            <div className="row">
+              <CityPreview city = {cities[0]} />
+              <CityPreview city = {cities[1]} />
+              <CityPreview city = {cities[2]} />
+              <CityPreview city = {cities[3]} />
+              <CityPreview city = {cities[4]} />
+            </div>
           </div>
         }
       </section>

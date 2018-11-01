@@ -6,7 +6,9 @@ import CitiesIndex from './components/CitiesIndex';
 class App extends React.Component {
   render() {
     return(
-      <CitiesIndex />
+      <div className="container">
+        <CitiesIndex />
+      </div>
     );
   }
 }
