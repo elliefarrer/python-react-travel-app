@@ -3,21 +3,21 @@ const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpack = new HtmlWebpackPlugin({
-  template: 'src/index.html',
+  template: 'frontend/templates/frontend/index.html',
   filename: 'index.html',
   inject: 'body'
 });
 
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CopyWebpack = new CopyWebpackPlugin([
-  { from: './src/assets', to: 'assets' }
-]);
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpack = new CopyWebpackPlugin([
+//   { from: './src/assets', to: 'assets' }
+// ]);
 
 const HotModuleReplcement = new webpack.HotModuleReplacementPlugin();
 
 module.exports = {
   mode: 'development',
-  entry: './src/app.js',
+  entry: './frontend/src/index.js',
   output: {
     path: path.resolve('public'),
     filename: 'app.js',
@@ -47,5 +47,5 @@ module.exports = {
       }
     }
   },
-  plugins: [HotModuleReplcement, HtmlWebpack, CopyWebpack]
+  plugins: [HotModuleReplcement, HtmlWebpack]
 };

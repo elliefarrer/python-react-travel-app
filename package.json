@@ -2,7 +2,7 @@
   "name": "python-react-travel-app",
   "version": "1.0.0",
   "description": "A basic travel review app, built using Python, Django, and React.",
-  "main": "index.js",
+  "main": "frontend/src/index.js",
   "scripts": {
     "start:client": "webpack-dev-server",
     "build": "webpack -p",
