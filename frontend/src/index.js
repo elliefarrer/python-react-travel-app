@@ -4,7 +4,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 
 // Custom components
 import Home from './components/pages/Home';
-import CitiesIndex from './components/CitiesIndex';
+import CitiesIndex from './components/cities/CitiesIndex';
 
 class App extends React.Component {
   render() {

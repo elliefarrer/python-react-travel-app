@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 // Custom components
-import CityPreview from './CityPreview';
+import CityPreview from '../common/CityPreview';
 
 export default class CitiesIndex extends React.Component {
   state = {
