@@ -48,5 +48,25 @@
       "population": 514861,
       "img": "https://www.huurwoningervaringen.nl/wp-content/uploads/2018/02/den-haag.jpg"
     }
+  },
+  {
+    "model": "cities.city",
+    "pk": 6,
+    "fields": {
+      "name": "Paris",
+      "country": "France",
+      "population": 2200000,
+      "img": "https://images.unsplash.com/photo-1505205296326-2178af1b47bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=16ef2e41e10c852a17abf9ce4f430d62&auto=format&fit=crop&w=1500&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 7,
+    "fields": {
+      "name": "Manchester",
+      "country": "United Kingdom",
+      "population": 510746,
+      "img": "https://images.unsplash.com/photo-1515586838455-8f8f940d6853?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b18aa30ad7e888127082d0d239ae3c72&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb"
+    }
   }
 ]

@@ -3,14 +3,12 @@ import axios from 'axios';
 
 // Custom components
 import CityPreview from './CityPreview';
-// import DataProvider from './DataProvider';
-// import CitiesColumns from './CitiesColumns';
 
 export default class CitiesIndex extends React.Component {
   state = {
     hasLoaded: false
   }
-  // BUG: Component mounted thing runs, but once axios request is done, it doesn't
+
   componentDidMount = () => {
     console.log('Component mounted');
     axios.get('/api/city/')
@@ -19,19 +17,11 @@ export default class CitiesIndex extends React.Component {
         this.setState({ cities: res.data, hasLoaded: true });
         console.log('The state is now', this.state);
       });
-    //     console.log('The res is', res.data);
-    //     this.setState({ cities: res.data });
-    //   })
-    //   .catch(err => console.log('There was an error', err));
   }
 
   render() {
     const cities = this.state.cities;
-    console.log('Render works');
-    // if(this.state.cities.length > 0) {
-      console.log('The state in render is', this.state);
-      //BUG: this might be a babel issue??? Do the babel stuff like in Orbital
-    // }
+    console.log('The state in render is', this.state);
     return(
       <section>
         <h1>All Cities</h1>
@@ -39,11 +29,19 @@ export default class CitiesIndex extends React.Component {
           <div>
             <p className="text-muted">{cities.length} cities added...so far!</p>
             <div className="row">
-              <CityPreview city = {cities[0]} />
-              <CityPreview city = {cities[1]} />
-              <CityPreview city = {cities[2]} />
-              <CityPreview city = {cities[3]} />
-              <CityPreview city = {cities[4]} />
+              <CityPreview city={cities[0]} />
+              <CityPreview city={cities[1]} />
+              <CityPreview city={cities[2]} />
+              <CityPreview city={cities[3]} />
+              <CityPreview city={cities[4]} />
+              <CityPreview city={cities[5]} />
+              <CityPreview city={cities[6]} />
+
+              {/* {this.state.cities.map(city => {
+                <div key={city.id}>
+                  <CityPreview city={city}/>
+                </div>;
+              })} */}
             </div>
           </div>
         }
