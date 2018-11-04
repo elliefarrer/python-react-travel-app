@@ -36,6 +36,19 @@ export default class CitiesIndex extends React.Component {
               <CityPreview city={cities[4]} />
               <CityPreview city={cities[5]} />
               <CityPreview city={cities[6]} />
+              <CityPreview city={cities[7]} />
+              <CityPreview city={cities[8]} />
+              <CityPreview city={cities[9]} />
+              <CityPreview city={cities[10]} />
+              <CityPreview city={cities[11]} />
+              <CityPreview city={cities[12]} />
+              <CityPreview city={cities[13]} />
+              <CityPreview city={cities[14]} />
+              <CityPreview city={cities[15]} />
+              <CityPreview city={cities[16]} />
+              <CityPreview city={cities[17]} />
+              <CityPreview city={cities[18]} />
+              <CityPreview city={cities[19]} />
 
               {/* {this.state.cities.map(city => {
                 <div key={city.id}>

@@ -68,5 +68,135 @@
       "population": 510746,
       "img": "https://images.unsplash.com/photo-1515586838455-8f8f940d6853?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b18aa30ad7e888127082d0d239ae3c72&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb"
     }
+  },
+  {
+    "model": "cities.city",
+    "pk": 8,
+    "fields": {
+      "name": "Belfast",
+      "country": "United Kingdom",
+      "population": 280211,
+      "img": "https://visit-belfast.s3.eu-west-1.amazonaws.com/JDJ5JDEwJFpXOGN5LnJOMVhETFh5eEtTSkdMdC5vUkRWS3A5U1VRV08uTXZzcU84dmJZSGdXbDE3N1lp_1920x1080.jpg"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 9,
+    "fields": {
+      "name": "Brighton",
+      "country": "United Kingdom",
+      "population": 229700,
+      "img": "https://images.unsplash.com/photo-1530126462343-6619994983f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f5bea937701a6d8be456a9cc9a42283&auto=format&fit=crop&w=1334&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 10,
+    "fields": {
+      "name": "Rotterdam",
+      "country": "The Netherlands",
+      "population": 623652,
+      "img": "https://images.unsplash.com/photo-1517924950837-ff2a1ed95306?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1365b1982c92db49f7fc9aeaa63060dd&auto=format&fit=crop&w=1510&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 11,
+    "fields": {
+      "name": "Vancouver",
+      "country": "Canada",
+      "population": 631490,
+      "img": "https://images.unsplash.com/uploads/1413142012358a3b38d01/316f8e75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b4ec63b188a2a2c993082901bb25a041&auto=format&fit=crop&w=1500&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 12,
+    "fields": {
+      "name": "Dubrovnik",
+      "country": "Croatia",
+      "population": 43697,
+      "img": "https://images.unsplash.com/photo-1532662939046-f320195bbaf8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29adbedf9fcae926ae0d2f7ab006cf74&auto=format&fit=crop&w=1500&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 13,
+    "fields": {
+      "name": "Amsterdam",
+      "country": "The Netherlands",
+      "population": 821752,
+      "img": "https://images.unsplash.com/photo-1529913666176-6149920030b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=90c1b4fedd99c5d3e661e4111c186876&auto=format&fit=crop&w=1500&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 14,
+    "fields": {
+      "name": "New York City",
+      "country": "United States of America",
+      "population": 8623000,
+      "img": "https://images.unsplash.com/photo-1496588152823-86ff7695e68f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=be35499188c292144ed3bfc3dac2f3fa&auto=format&fit=crop&w=1500&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 15,
+    "fields": {
+      "name": "Juneau",
+      "country": "United States of America",
+      "population": 32094,
+      "img": "https://juneaudistrictheat.com/wp-content/uploads/2015/09/PG6A0839.jpg"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 16,
+    "fields": {
+      "name": "Kotor",
+      "country": "Montenegro",
+      "population": 13510,
+      "img": "https://cdn.verkeersbureaus.info/wp-content/uploads/2016/01/kotor_bay_montenegro_adriatic_sea.jpg"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 17,
+    "fields": {
+      "name": "Skagway",
+      "country": "United States of America",
+      "population": 741,
+      "img": "http://nv1zvw69is2mpivd24xxh8lb-wpengine.netdna-ssl.com/wp-content/uploads/2015/10/skagway-alaska.jpg"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 18,
+    "fields": {
+      "name": "Calgary",
+      "country": "Canada",
+      "population": 1239000,
+      "img": "https://images.unsplash.com/photo-1526863336296-fac32d550655?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3084c4e0c49cdf041910b0fb84e9074e&auto=format&fit=crop&w=1500&q=80"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 19,
+    "fields": {
+      "name": "Chesham",
+      "country": "United Kingdom",
+      "population": 20343,
+      "img": "https://www.telegraph.co.uk/content/dam/Travel/2017/July/Chesham-travel-Getty.jpg"
+    }
+  },
+  {
+    "model": "cities.city",
+    "pk": 20,
+    "fields": {
+      "name": "Ketchikan",
+      "country": "United States of America",
+      "population": 8272,
+      "img": "http://royalportfolio.com/wp-content/uploads/2014/06/ketchikan-welcome.jpg"
+    }
   }
 ]
