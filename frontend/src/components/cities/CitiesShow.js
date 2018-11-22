@@ -6,17 +6,17 @@ export default class CitiesShow extends React.Component {
     hasLoaded: false
   }
 
-  formatPopulation = pop => {
-    const stringified = pop.toString();
-
-    if(stringified.length >= 7) {
-      return `${stringified.substr(0, stringified.length - 6)}.${stringified.substr(1,1)}M`;
-    } else if(stringified.length >= 4) {
-      return `${stringified.substr(0, stringified.length - 3)},${stringified.substr(stringified.length - 3)}`;
-    } else {
-      return stringified;
-    }
-  }
+  // formatPopulation = pop => {
+  //   const stringified = pop.toString();
+  //
+  //   if(stringified.length >= 7) {
+  //     return `${stringified.substr(0, stringified.length - 6)}.${stringified.substr(1,1)}M`;
+  //   } else if(stringified.length >= 4) {
+  //     return `${stringified.substr(0, stringified.length - 3)},${stringified.substr(stringified.length - 3)}`;
+  //   } else {
+  //     return stringified;
+  //   }
+  // }
 
   componentDidMount = () => {
     console.log('Component mounted');
@@ -40,7 +40,7 @@ export default class CitiesShow extends React.Component {
             <h3>{city.country}</h3>
 
             <h5>About {city.name}</h5>
-            <p>Population: <span className="text-muted">{this.formatPopulation(city.population)}</span></p>
+            {/* <p>Population: <span className="text-muted">{this.formatPopulation(city.population)}</span></p> */}
           </div>
         }
 

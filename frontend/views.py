@@ -21,10 +21,10 @@ def city_collection(req):
         return Response(serializer.data)
 
 @api_view(['GET'])
-def city_element(req, cityId):
+def city_element(req, pk):
     print("GET City element running")
     try:
-        city = City.objects.filter(pk=cityId)
+        city = City.objects.filter(id=pk)
     except City.DoesNotExist:
         return HttpResponse(status=404)
 
