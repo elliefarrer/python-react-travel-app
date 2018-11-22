@@ -11,7 +11,7 @@ export default class CitiesIndex extends React.Component {
 
   componentDidMount = () => {
     console.log('Component mounted');
-    axios.get('/api/city/')
+    axios.get('/api/cities/')
       .then(res => {
         console.log('Here we go', res.data);
         this.setState({ cities: res.data, hasLoaded: true });

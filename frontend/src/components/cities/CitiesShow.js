@@ -21,7 +21,7 @@ export default class CitiesShow extends React.Component {
   componentDidMount = () => {
     console.log('Component mounted');
     console.log('Should get', this.props.match.params.cityId);
-    axios.get(`/api/city/${this.props.match.params.cityId}`)
+    axios.get(`/api/cities/${this.props.match.params.cityId}/`)
       .then(res => {
         // this.setState({ city: res.data[this.props.match.params.cityId-1], hasLoaded: true });
         this.setState({ city: res.data, hasLoaded: true });
