@@ -13,9 +13,9 @@ export default class CitiesIndex extends React.Component {
     console.log('Component mounted');
     axios.get('/api/cities/')
       .then(res => {
-        console.log('Here we go', res.data);
+        // console.log('Here we go', res.data);
         this.setState({ cities: res.data, hasLoaded: true });
-        console.log('The state is now', this.state);
+        // console.log('The state is now', this.state);
       });
   }
 
