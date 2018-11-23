@@ -4,6 +4,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 
 // Custom components
 import Header from './components/partials/Header';
+import Footer from './components/partials/Footer';
 
 import Home from './components/pages/Home';
 import CitiesIndex from './components/cities/CitiesIndex';
@@ -19,6 +20,7 @@ class App extends React.Component {
           <Route exact path="/cities" component={CitiesIndex}/>
           <Route path="/cities/:cityId" component={CitiesShow} />
         </main>
+        <Footer />
       </div>
     );
   }
